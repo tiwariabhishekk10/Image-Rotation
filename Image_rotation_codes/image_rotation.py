@@ -16,7 +16,7 @@ for image_path in os.listdir(path):
     angle=randint(1,359)
     rotated=imutils.rotate_bound(image_to_rotate,angle)#differnce between rotate and rotate_bound is i does not cuts any part of image.
 
-    fullpath=os.path.join(outpath,'rotated_'+str(randint(1,41837))+'.jpg')#we can put +path also
+    fullpath=os.path.join(outpath,'rotated_'+image_path)#we can put +path also
     f.write(image_path+" " +str(angle)+"\n")
     cv2.imwrite(fullpath,rotated)
 f.close()
