@@ -65,7 +65,7 @@ print('test y',testy.shape)
 
 model=Sequential()
 
-model.add(Conv2D(16,(3,3),input_shape=images_train_x.shape[1:]))
+model.add(Conv2D(16,(3,3),padding='same',input_shape=images_train_x.shape[1:]))
 model.add(Activation('relu'))
 model.add(Conv2D(16,(3,3)))
 model.add(Activation('relu'))
