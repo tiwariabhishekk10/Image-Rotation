@@ -3,7 +3,7 @@
 # Problem 
 The aim is to build a model to predict the appropriate angle of a clicked image.
 
-#Methodology
+# Methodology
 To build the model:
 1. Python package beautifulsoup() was used to build the scrapper for web scrapping the images from internet. 
 2. Python package OpenCv() was used to rotate all the scrapped images randomly between angle 0 to 359. 
